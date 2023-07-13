@@ -1,27 +1,135 @@
 <script>
+//import
+
 export default {
-  name: "MainComponent",
-  data(){
-    return{
+data() {
+return{
 
-    }
-  },
-  methods: {
+}
+},
 
-  }
 }
 </script>
 
+
 <template>
-    <Main>
-        MAIN
-    </Main>
+<main>
+<section>
+
+<div class="main-container">
+
+  <div class="main-top">
+      Content goes here 
+  </div>
+
+</div>
+
+</section>
+
+<section class="main-bottom">
+<div class="main-container">
+  <div class="blue-card">
+
+      <div class="card">
+          <div class="card-img-container">
+              <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+          </div>
+          <span>
+              digital comics
+          </span>
+      </div>
+      <div class="card">
+          <div class="card-img-container">
+              <img src="../assets/img/buy-comics-merchandise.png" alt="">
+          </div>
+          <span>
+              dc merchandise
+          </span>
+      </div>
+      <div class="card">
+          <div class="card-img-container">
+              <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+          </div>
+          <span>
+              subscription
+          </span>
+      </div>
+      <div class="card">
+          <div class="card-img-container">
+              <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+          </div>
+          <span>
+              comic shop locator
+          </span>
+      </div>
+      <div class="card">
+          <div class="card-img-container">
+              <img src="../assets/img/buy-dc-power-visa.svg" alt="">
+          </div>
+          <span>
+              dc power visa
+          </span>
+      </div>
+  </div>
+
+</div>
+</section>
+
+
+</main>
+
 </template>
 
 <style lang="scss" scoped>
-Main{
-    padding: 40px;
-    text-align: center;
-    color: rgb(171, 1, 1);
+@use '../assets/scss/partials/variables.scss' as *;
+
+main{
+background-color: black;
+color: white;
 }
+.main-top{
+height: 80px;
+line-height: 80px;
+}
+
+.main-bottom{
+background-color: $main-bg-color;
+height: 140px;
+
+}
+
+.blue-card{
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-items: center;
+padding-top: 35px;
+
+
+.card {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+.card-img-container{
+width: 40px;
+height: 40px;
+
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+}
+span{
+text-transform: uppercase;
+font-size: 0.6em;
+line-height: 35px;
+margin-left: 0;
+}
+}
+
+}
+
 </style>
