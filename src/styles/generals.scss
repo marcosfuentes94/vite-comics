@@ -1,0 +1,29 @@
+// GENERAL
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: sans-serif;
+}
+
+img {
+max-width: 100%;
+}
+
+ul li {
+list-style: none;
+}
+
+a {
+text-decoration: none;
+}
+
+// LAYOUT
+.container {
+max-width: 1200px;
+width: 70%;
+margin: 0 auto;
+}

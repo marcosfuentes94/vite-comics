@@ -1,39 +1,32 @@
 <script>
-import HeaderComponent from './components/HeaderComponent.vue';
-import MainComponent from './components/MainComponent.vue';
-import FooterComponent from './components/FooterComponent.vue';
+import AppHeader from './components/AppHeader.vue'
+import AppMain from './components/AppMain.vue'
+import BlueSection from './components/BlueSection.vue'
+import AppFooter from './components/AppFooter.vue'
+import AppJumbo from './components/AppJumbo.vue'
 
 export default {
   name: "App",
   components: {
-    HeaderComponent,
-    MainComponent,
-    FooterComponent
-  },
-  data(){
-    return{
-
-    }
-  },
-  methods: {
-
+    AppHeader,
+    AppMain,
+    BlueSection,
+    AppFooter,
+    AppJumbo
   }
 }
 
 </script>
 
 <template>
-
-  <HeaderComponent/>
-
-  <MainComponent/>
-
-  <FooterComponent/>
-
+  <AppHeader />
+  <AppJumbo />
+  <AppMain />
+  <BlueSection />
+  <AppFooter />
 </template>
 
 <style lang="scss">
-@use "./assets/scss/main.scss";
-@use "./assets/scss/partials/variables.scss"
-
+@use "./styles/partials/variables" as *;
+@use "./styles/generals.scss" as *;
 </style>
