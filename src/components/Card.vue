@@ -29,7 +29,7 @@ h4 {
     margin-top: 10px;
 }
 img{
-    height: 250px;
+    height: 200px;
 }
 }
 </style>
